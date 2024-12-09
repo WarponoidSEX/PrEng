@@ -41,8 +41,6 @@ text = [
 results = sentiment_model(text)
 
 # Вывод результата
-# for result in results:
-#     print(f"Label: {result['label']}, Score: {result['score']:.2f}")
 for idx, result in enumerate(results):
     print(f"Text {idx + 1}: {text[idx]}")
     print(f"Label: {result['label']}, Score: {result['score']:.2f}")
